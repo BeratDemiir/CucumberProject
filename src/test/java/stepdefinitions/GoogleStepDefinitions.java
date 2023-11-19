@@ -45,4 +45,13 @@ public class GoogleStepDefinitions {
     public void sonuclarda_tesla_oldugunu_dogrular() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("tesla"));
     }
+
+    @When("kullanici {string} icin arama yapar")
+    public void kullanici_icin_arama_yapar(String string) {
+        googlePage.searchBox.sendKeys(string + Keys.ENTER );
+    }
+    @Then("sonuclarda {string} oldugunu dogrular")
+    public void sonuclarda_oldugunu_dogrular(String string) {
+        Assert.assertTrue(Driver.getDriver().getPageSource().contains(string));
+    }
 }

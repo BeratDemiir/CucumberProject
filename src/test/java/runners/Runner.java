@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",//features folder path
         glue = "stepdefinitions", //stepdefinitions path
-        tags = "@iphone or @tesla"
+        tags = "@scenario_outline_1",
+        dryRun = false
 )
 public class Runner {
 }

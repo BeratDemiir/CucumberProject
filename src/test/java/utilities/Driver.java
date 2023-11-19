@@ -20,7 +20,7 @@ public class Driver {
 
         //create a driver instance
         private static WebDriver driver;
-        private static int timeout = 5;
+        private static int timeout = 20;
 
         //What?=>It is just to create, initialize the driver instance.(Singleton driver)
         //Why?=>We don't want to create and initialize the driver when we don't need
@@ -52,7 +52,7 @@ public class Driver {
                   //  driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
                 }
             }
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
             driver.manage().window().maximize();
             return driver;
         }

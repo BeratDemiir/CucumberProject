@@ -19,7 +19,7 @@ Feature: ilk feature file
     Then close the application
 
 
-#  1. Her feature file, Feature: kelimesi ile baslamak zorundadir..
+#  1. Her feature file, Feature: kelimesi ile baslamak zorundadir.
 #  2. Her bir file da, yanliz bit Feature: kullanilabilir
 #  3. Senaryo(TEST CASE) olusturmak icin Scenario kelimesi kullanilir
 #  4. Birden fazla Scenario: kullanilabilir
