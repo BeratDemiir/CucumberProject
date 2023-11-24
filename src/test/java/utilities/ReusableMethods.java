@@ -186,5 +186,5 @@ import java.util.function.Function;
             int optionIndex = 1 + random.nextInt(weblist.size() - 1);
             select.selectByIndex(optionIndex);
             return select.getFirstSelectedOption();
-        }
     }
+}
