@@ -4,6 +4,8 @@ Feature: hooks_test
   Background: googlea_git
     Given kullanici google gider
 
+    #  Bu scenariolar bilerek fail ettik.
+# Raporlarda Fail durumunda ekran goruntusu eklenmis olacakdir
   Scenario: TC01_google_iphone_arama
     When kullanici "iphone" icin arama yapar
     Then sonuclarda "apple" oldugunu dogrular
