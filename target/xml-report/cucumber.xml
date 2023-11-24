@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.269" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="" name="TC01_musteri_giris_testi" time="0.037">
-<failure/>
+<testsuite name="Cucumber" time="17.579" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="" name="TC01_musteri_giris_testi" time="17.382">
+<failure type="org.openqa.selenium.NoSuchElementException" message="Unable to find element with locator By.id: dropdown-basic-button
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: driver.version: RemoteWebDriver">
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: dropdown-basic-button
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+	at stepdefinitions.ExcelStepDefinitions.kullanici_bilgileri_ile_giris_yapar(ExcelStepDefinitions.java:47)
+	at ✽.kullanici "customer_info" bilgileri ile giris yapar(file:///C:/Users/LENOVO/IdeaProjects/batch103Cucumber/./src/test/resources/features/c06_excel_automation.feature:4)
+]]>
+</failure>
 <system-out><![CDATA[
-Given kullanici "customer_info" bilgileri ile giris yapar...................undefined
+Given kullanici "customer_info" bilgileri ile giris yapar...................failed
 ]]></system-out>
 </testcase>
 </testsuite>
