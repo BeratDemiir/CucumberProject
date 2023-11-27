@@ -14,4 +14,5 @@ Feature: hooks_test
   Scenario: TC02_google_tesla_arama
     When kullanici "tesla" icin arama yapar
     Then sonuclarda "volvo" oldugunu dogrular
+    Then ekran goruntusu al
     Then close the application
