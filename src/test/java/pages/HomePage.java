@@ -7,8 +7,8 @@ import utilities.Driver;
 
 public class HomePage {
 
-    public HomePage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public HomePage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "(//a[@role='button'])[1]")
