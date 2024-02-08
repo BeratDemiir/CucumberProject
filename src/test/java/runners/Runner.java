@@ -24,6 +24,6 @@ import org.junit.runner.RunWith;
 )
 public class Runner {
 }
-//Bu sinif Test caseleri RUN etmek icin kullanilir
-//Ve konfigurasyonlar icin kullanilir
-//Runner class, features file lar ile step defitions i birbirlerine baglar
+// Bu sinif Test caseleri RUN etmek icin kullanilir
+// Ve konfigurasyonlar icin kullanilir
+// Runner class, features file lar ile step defitions i birbirlerine baglar
