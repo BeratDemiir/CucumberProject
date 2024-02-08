@@ -16,11 +16,12 @@ public class Hooks {
      */
 
     @Before
-    public void setUpScenarios(){
+    public void setUpScenarios() {
         System.out.println("Before Method u");
     }
+
     @After
-    public void tearDownScenarios(Scenario scenario){
+    public void tearDownScenarios(Scenario scenario) {
         System.out.println("After Method u");
 //        Eger bir Scenario FAIL ederse, ekran goruntusunu al ve rapora ekle
         if (scenario.isFailed()) {
