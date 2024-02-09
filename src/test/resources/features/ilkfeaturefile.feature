@@ -4,14 +4,14 @@ Feature: ilk feature file
   Background: Google_sayfasina_git
     Given kullanici google gider
 
-   @iphone
+  @iphone
   Scenario: TC01_google_iphone_arama
    # Given kullanici google gider --> ustte Background icinde kullanilidigi icin tekrar kullanmaya gerek yoktur.
     When kullanici iphone icin arama yapar
     Then sonuclarda iphone oldugunu dogrular
     Then close the application
 
-    @tesla
+  @tesla
   Scenario: TC02_google_tesla_arama
     # Given kullanici google gider --> ustte Background icinde kullanilidigi icin tekrar kullanmaya gerek yoktur.
     When kullanici tesla icin arama yapar
