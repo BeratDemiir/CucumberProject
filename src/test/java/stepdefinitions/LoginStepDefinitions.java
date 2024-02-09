@@ -21,9 +21,9 @@ public class LoginStepDefinitions {
 //        loginPage.login.click();
 
 //2.   Datatable da datalari List<Map<String,String>> de depolayabiliriz
-        List<Map<String,String>> musteriBilgisi = dataTable.asMaps(String.class,String.class);
+        List<Map<String, String>> musteriBilgisi = dataTable.asMaps(String.class, String.class);
         System.out.println(musteriBilgisi);
-        for (Map<String ,String > musteri : musteriBilgisi){
+        for (Map<String, String> musteri : musteriBilgisi) {
             loginPage.email.sendKeys(musteri.get("email"));
             loginPage.password.sendKeys(musteri.get("sifre"));
             loginPage.login.click();
