@@ -18,16 +18,16 @@ public class ExcelStepDefinitions {
     HomePage homePage;
     LoginPage loginPage;
     ExcelUtils excelUtils;
-    List<Map<String,String>> excelData;
+    List<Map<String, String>> excelData;
 
     @Given("kullanici {string} bilgileri ile giris yapar")
     public void kullanici_bilgileri_ile_giris_yapar(String sayfaAdi) throws IOException {
-        String path="./src/test/resources/testdata/mysmoketestdata.xlsx";
+        String path = "./src/test/resources/testdata/mysmoketestdata.xlsx";
 //        String sayfa = "customer_info";
-        excelUtils = new ExcelUtils(path,sayfaAdi);
+        excelUtils = new ExcelUtils(path, sayfaAdi);
         excelData = excelUtils.getDataList();
 //        NOTE Loop kodunu tamamla
-        for (Map<String,String> data : excelData) {
+        for (Map<String, String> data : excelData) {
             Driver.getDriver().get(ConfigReader.getProperty("app_url"));
             homePage = new HomePage();
             loginPage = new LoginPage();
