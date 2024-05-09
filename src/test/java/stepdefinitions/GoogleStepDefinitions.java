@@ -23,7 +23,6 @@ public class GoogleStepDefinitions {
 //        }catch (Exception e){
 //
 //        }
-
     }
 
     @When("kullanici iphone icin arama yapar")

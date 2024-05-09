@@ -26,4 +26,4 @@ public class Runner {
 }
 // Bu sinif Test caseleri RUN etmek icin kullanilir
 // Ve konfigurasyonlar icin kullanilir
-// Runner class, features file lar ile step defitions i birbirlerine baglar
+// Runner class, features file lar ile step defitions i birbirlerine baglar.
