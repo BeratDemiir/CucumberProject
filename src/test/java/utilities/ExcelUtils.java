@@ -85,7 +85,7 @@ public class ExcelUtils {
         return data;
     }
 
-    //==============going to the first row and reading each column one by one==================//
+    //==============going to the first row and reading each column one by one=================//
     public List<String> getColumnsNames() {
         List<String> columns = new ArrayList<>();
         for (Cell cell : workSheet.getRow(0)) {
