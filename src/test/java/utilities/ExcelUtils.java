@@ -120,8 +120,8 @@ public class ExcelUtils {
         setCellData(value, row, column);
     }
 
-    //this method will return data table as 2d array
-    //so we need this format because of data provider.
+    // this method will return data table as 2d array
+    // so we need this format because of data provider.
     public String[][] getDataArrayWithoutFirstRow() {
         String[][] data = new String[rowCount() - 1][columnCount()];
         for (int i = 1; i < rowCount(); i++) {
