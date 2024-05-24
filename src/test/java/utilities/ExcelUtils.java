@@ -73,7 +73,7 @@ public class ExcelUtils {
         }
     }
 
-    //============getting all data into two dimentional array and returning the data===
+    //============  getting all data into two dimentional array and returning the data  ===
     public String[][] getDataArray() {
         String[][] data = new String[rowCount()][columnCount()];
         for (int i = 0; i < rowCount(); i++) {
@@ -85,7 +85,7 @@ public class ExcelUtils {
         return data;
     }
 
-    //==============going to the first row and reading each column one by one=================//
+    //==============  going to the first row and reading each column one by one  ================//
     public List<String> getColumnsNames() {
         List<String> columns = new ArrayList<>();
         for (Cell cell : workSheet.getRow(0)) {
@@ -94,7 +94,7 @@ public class ExcelUtils {
         return columns;
     }
 
-    //=========When you enter the row and column number, returning the value===============//
+    //=========  When you enter the row and column number, returning the value  ===============//
     public void setCellData(String value, int rowNum, int colNum) {
         Cell cell;
         Row row;
