@@ -56,12 +56,12 @@ public class ExcelUtils {
         return workSheet.getRow(0).getLastCellNum();
     }
 
-    //===============how do you get the last row number?Index start at 0.====================
+    //===============how do you get the last row number?Index start at 0. ==============//
     public int rowCount() {
         return workSheet.getLastRowNum() + 1;
     }//adding 1 to get the actual count
 
-    //==============When you enter row and column number, then you get the data==========
+    //==============When you enter row and column number, then you get the data ==========//
     public String getCellData(int rowNum, int colNum) {
         Cell cell;
         try {
