@@ -14,7 +14,7 @@ public class ExcelUtils {
     private Sheet workSheet;
     private String path;
 
-    public ExcelUtils(String path, String sheetName) {//This Constructor is to open and access the excel file
+    public ExcelUtils(String path, String sheetName) { // This Constructor is to open and access the excel file
         this.path = path;
         try {
             // Opening the Excel file
@@ -50,7 +50,7 @@ public class ExcelUtils {
         return data;
     }
 
-    //===============Getting the number of columns in a specific single row=================
+    //============== Getting the number of columns in a specific single row  =================//
     public int columnCount() {
         //getting how many numbers in row 1
         return workSheet.getRow(0).getLastCellNum();
@@ -59,7 +59,7 @@ public class ExcelUtils {
     //===============how do you get the last row number?Index start at 0. ==============//
     public int rowCount() {
         return workSheet.getLastRowNum() + 1;
-    }//adding 1 to get the actual count
+    } //  adding 1 to get the actual count
 
     //==============When you enter row and column number, then you get the data ==========//
     public String getCellData(int rowNum, int colNum) {

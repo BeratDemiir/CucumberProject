@@ -81,7 +81,7 @@ public class ReusableMethods {
     }
 
     //   HARD WAIT WITH THREAD.SLEEP
-//   waitFor(5);  => waits for 5 second
+     //   waitFor(5);  => waits for 5 second
     public static void waitFor(int sec) {
         try {
             Thread.sleep(sec * 1000);
@@ -90,7 +90,7 @@ public class ReusableMethods {
         }
     }
 
-    //===============Explicit Wait==============//
+    //===============  Explicit Wait  ==============//
     public static WebElement waitForVisibility(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.visibilityOf(element));
@@ -138,7 +138,7 @@ public class ReusableMethods {
         }
     }
 
-    //======Fluent Wait====//
+    //======  Fluent Wait  ======//
     public static WebElement fluentWait(final WebElement webElement, int timeout) {
         //FluentWait<WebDriver> wait = new FluentWait<WebDriver>(Driver.getDriver()).withTimeout(timeinsec, TimeUnit.SECONDS).pollingEvery(timeinsec, TimeUnit.SECONDS);
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(Driver.getDriver())
