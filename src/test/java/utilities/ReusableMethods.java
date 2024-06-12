@@ -57,7 +57,7 @@ public class ReusableMethods {
         actions.moveToElement(element).perform();
     }
 
-    //==========Return a list of string given a list of Web Element====////
+    //==========  Return a list of string given a list of Web Element   ========//
     public static List<String> getElementsText(List<WebElement> list) {
         List<String> elemTexts = new ArrayList<>();
         for (WebElement el : list) {
@@ -68,7 +68,7 @@ public class ReusableMethods {
         return elemTexts;
     }
 
-    //========Returns the Text of the element given an element locator==//
+    //========  Returns the Text of the element given an element locator   ========//
     public static List<String> getElementsText(By locator) {
         List<WebElement> elems = Driver.getDriver().findElements(locator);
         List<String> elemTexts = new ArrayList<>();
