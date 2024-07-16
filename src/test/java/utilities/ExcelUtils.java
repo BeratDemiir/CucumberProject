@@ -28,8 +28,8 @@ public class ExcelUtils {
         }
     }
 
-    //This will get the list of the data in the excel file
-    //This is a list of map of string. This takes the data as string and will return the data as a Map of String
+    // This will get the list of the data in the excel file
+    // This is a list of map of string. This takes the data as string and will return the data as a Map of String
     public List<Map<String, String>> getDataList() {
         // getting all columns
         List<String> columns = getColumnsNames();

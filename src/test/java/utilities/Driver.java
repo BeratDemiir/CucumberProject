@@ -301,7 +301,7 @@ public class Driver {
     }
 
     //    Parameter1 : WebElement
-    //    Parameter2:  String
+    //    Parameter2 : String
     //    Driver.selectByIndex(dropdown element, "91303")
     public static void selectByValue(WebElement element, String value) {
         Select objSelect = new Select(element);
