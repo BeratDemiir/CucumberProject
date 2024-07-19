@@ -50,13 +50,13 @@ public class ExcelUtils {
         return data;
     }
 
-    //============== Getting the number of columns in a specific single row  =================//
+    //============ Getting the number of columns in a specific single row  ==============//
     public int columnCount() {
         //getting how many numbers in row 1
         return workSheet.getRow(0).getLastCellNum();
     }
 
-    //===============how do you get the last row number?Index start at 0. ==============//
+    //========== how do you get the last row number?Index start at 0. ============//
     public int rowCount() {
         return workSheet.getLastRowNum() + 1;
     } //  adding 1 to get the actual count
